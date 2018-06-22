@@ -1,0 +1,10 @@
+@media screen and (max-width: 800px) {
+  body {
+    background-color: #ddd;
+    color: white;
+  }
+
+  .jumbotron {
+    background-color: #333;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>rockpaperscissors</title>
+  </head>
+  <body>
+
+    <h1>Press 'R', 'P', or 'S' to start playing!</h1>
+
+    <h2>Wins: <span id="winz">0</span></h2><br><br>
+    <h2>Losses: <span id="lozz">0</span></h2><br><br>
+    <h2>Ties: <span id="tiez">0</span></h2>
+
+
+
+
+
+    <script>
+    var computer = ['r', 'p', 's'];
+    // var randomComputer = computer[Math.floor(computer.length * Math.random())];
+    var userChoice = ("");
+    var score = [0, 0, 0];
+    var winz = document.getElementById('winz')
+    var lozz = document.getElementById('lozz')
+    var tiez = document.getElementById('tiez')
+
+    document.onkeydown = function(event) {
+      userChoice = event.key;
+      if (userChoice == "r" || "p" || "s") {
+        var randomComputer = computer[Math.floor(computer.length * Math.random())];
+      if (randomComputer == userChoice) {
+        score[2]++;
+        tiez.textContent = score[2];
+        alert("You chose " + userChoice + ", the computer chose " + randomComputer + ". You tie!\
+        Current record:" + score + "(Win, loss, tie)");
+
+      }
+      else if (randomComputer == "r" && userChoice == "p") {
+        score[0]++;
+        winz.textContent = score[0];
+        alert("You chose " + userChoice + ", the computer chose " + randomComputer + ". You win!\
+        Current record:" + score + "(Win, loss, tie)");
+
+      }
+      else if (randomComputer == "p" && userChoice == "s") {
+        score[0]++;
+        winz.textContent = score[0];
+        alert("You chose " + userChoice + ", the computer chose " + randomComputer + ". You win!\
+        Current record:" + score + "(Win, loss, tie)");
+
+      }
+      else if (randomComputer == "s" && userChoice == "r") {
+        score[0]++;
+        winz.textContent = score[0];
+        alert("You chose " + userChoice + ", the computer chose " + randomComputer + ". You win!\
+        Current record:" + score + "(Win, loss, tie)");
+
+      }
+      else if (randomComputer == "r" && userChoice == "s") {
+        score[1]++;
+        lozz.textContent = score[1];
+        alert("You chose " + userChoice + ", the computer chose " + randomComputer + ". You lose!\
+        Current record:" + score + "(Win, loss, tie)");
+
+      }
+      else if (randomComputer == "p" && userChoice == "r") {
+        score[1]++;
+        lozz.textContent = score[1];
+        alert("You chose " + userChoice + ", the computer chose " + randomComputer + ". You lose!\
+        Current record:" + score + "(Win, loss, tie)");
+
+      }
+      else if (randomComputer == "s" && userChoice == "p") {
+        score[1]++;
+        lozz.textContent = score[1];
+        alert("You chose " + userChoice + ", the computer chose " + randomComputer + ". You lose!\
+        Current record:" + score + "(Win, loss, tie)");
+
+      }
+      else if (userChoice !== "r" || "p" || "s") {
+        alert("Please press R, P, or S to play!")
+
+      }
+
+
+
+
+
+      };
+
+
+    }
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

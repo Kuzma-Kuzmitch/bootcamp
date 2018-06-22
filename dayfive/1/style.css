@@ -1,0 +1,57 @@
+body {
+  font-family: serif;
+  letter-spacing: 1px;
+  line-height: .9;
+  margin: auto;
+  text-align: left;
+  padding: 60px;
+  color: blue;
+  background-color: #dcc5c5;
+  font-weight: bold;
+
+}
+
+.p2 {
+  font-family: 'Source Code Pro', monospace;
+  padding: 30px;
+  color: #795d5db5;
+  border: 3px solid white;
+  line-height: .6;
+  margin-top: 30px;
+  background-color: #d8d3d38a;
+}
+
+
+.p1 {
+  text-shadow: 2px 2px white;
+  background-color: #ddd;
+  border: 3px solid white;
+  margin-bottom: 30px;
+}
+
+
+.gog {
+  margin-left: 42%;
+}
+
+a {
+  color: white;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+a:hover {
+  border: 3px solid #dcc5c5;
+}
+
+a:hover + .lin {
+  display: block;
+}
+
+.lin {
+  background-color: #dcc5c5;
+  padding: 20px;
+  display: none;
+  text-align: center;
+  color: #ddd;
+}
