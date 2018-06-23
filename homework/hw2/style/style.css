@@ -1,0 +1,28 @@
+body {
+  background-image: url("../images/concrete.png");
+}
+
+a:hover {
+  color: red;
+}
+
+textarea {
+  resize: none;
+}
+
+
+.thumbnail {
+    position: relative;
+    opacity: .8;
+}
+
+.caption {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #17a2b8;
+    color: white;
+    text-align: center;
+}
